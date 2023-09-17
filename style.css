@@ -1,0 +1,430 @@
+/* riferimento per palette colori: #8CDFD6 
+background-color dei box precedente: #d2e4e4
+*/
+
+/* STILE GENERALE */
+
+html {
+  color: #384049;
+  background-color: #eee;
+  font-family: 'Nunito', Arial, sans-serif;
+}
+
+a {
+  color: #384049;
+  text-decoration: none;
+  }
+
+h1 {
+  font-size: 38px;
+}
+
+footer {
+  font-size: .8rem;
+  background: #eee;
+  color: #384049;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto;
+}
+
+footer a {
+  color: #456990;
+}
+
+footer a:hover{
+  text-decoration: underline;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+} /* https://www.30secondsofcode.org/css/s/footer-at-the-bottom/ */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.spacer {
+  height: 50px;
+}
+
+.spacer2 {
+  height: 100px;
+}
+.spacer3 {
+  height: 25px;
+}
+
+.grow {
+  transition: transform 0.1s;
+}
+
+.grow:hover {
+  transform: scale(1.1);
+}
+
+
+/* HEADER */
+
+header {
+  background-color: #eee;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #384049;
+}
+
+.logo {
+  font-size: 1.625rem;
+  font-weight: 800;
+  font-style: italic;
+  margin-left: 0;
+  transition: transform 0.1s;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+/* HOMEPAGE */
+
+#headshot {
+  max-height: 12rem;
+  margin: 25px;
+}
+
+#presentation {
+  text-align: left;
+  margin: 25px;
+}
+
+#presentation p {
+  text-align: justify;
+}
+
+#presentation a {
+  color: #456990;
+}
+
+#presentation a:hover {
+  text-decoration: underline;
+}
+
+
+.dividerHome {
+  border-top: 3px solid #bbb;
+  border-radius: 3px;
+  width: 50%;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+#social ul {
+  list-style: none;
+  margin-top: 30px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+#social li {
+   margin-right: 20px;
+}
+
+#social img {
+  max-height: 35px;
+  opacity: 0.9;
+}
+
+#skills {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 15px auto 15px auto;
+}
+
+#skills h3 {
+  text-align: center;
+}
+
+#skills ul {
+  padding-left: 25px;
+}
+
+#skillsColumn1, #skillsColumn2, #skillsColumn3 {
+  width: calc(100%/3);
+  text-align: left;
+  margin-left: 0;
+  background-color: #bed8d8;
+  border-color: #456990;
+  border-radius: 8px;
+  border-width: 2px;
+  padding: 15px;
+  box-shadow: rgba(142, 187, 188, 0.16) 0px 3px 6px, rgba(142, 187, 188, 0.23) 0px 3px 6px;
+  box-sizing: border-box; /* https://stackoverflow.com/questions/36609079/prevent-child-div-from-expanding-outside-of-parent */
+  text-decoration: none;
+}
+
+#skillsColumn1, #skillsColumn2 {
+  margin-right: 30px;
+}
+
+#skills a:hover {
+  text-decoration: underline;
+}
+
+/* CURRICULUM */
+
+.h1Sec {
+  text-align: center;
+}
+
+.h2Sec {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 50px;
+  border-color: #456990;
+  background-color: #bed8d8;
+  border-radius: 8px;
+  border-width: 2px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  box-shadow: rgba(142, 187, 188, 0.16) 0px 3px 6px, rgba(142, 187, 188, 0.23) 0px 3px 6px;
+}
+
+.CVcontainer {
+  width: 70%;
+  align-content: center;
+  text-align: left;
+  margin: 10px auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+.CVcontainer h3 {
+  font-size: 18px;
+  margin-left: 10px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+.CVcontainer p {
+  font-size: 16px;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.CVcontainer ul {
+  margin-top: 6px;
+}
+
+.CVcontainer a:hover {
+  text-decoration: underline;
+}
+
+.infoSkill {
+  margin-bottom: 8px;
+}
+
+.listIndent {
+  padding-left: 20px;
+}
+
+
+/* CONTATTI */
+
+#contacts {
+  width: 40%;
+  text-align: center;
+  margin: auto;
+  border-radius: 8px;
+  border-width: 2px;
+  background-color: #bed8d8;
+  border-color: #456990;
+  font-size: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: rgba(142, 187, 188, 0.16) 0px 3px 6px, rgba(142, 187, 188, 0.23) 0px 3px 6px;
+}
+
+#contacts a:hover {
+  text-decoration: underline;
+}
+
+#contacts p {
+  margin-top: 8px;
+}
+
+#contacts h3 {
+  margin-bottom: 8px;
+}
+
+/* PORTFOLIO */
+
+#projContainer {
+  width: 80%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  margin: 15px auto 15px auto;
+  box-sizing: border-box;
+}
+
+#description {
+  margin: auto;
+  text-align: center;
+  width: 80%;
+}
+
+.project1, .project2 {
+  width: 40%;
+  text-align: justify;
+  margin: 40px auto;
+  border-color: #456990;
+  background-color: #bed8d8;
+  border-radius: 8px;
+  border-width: 2px;
+  padding: 10px;
+  box-shadow: rgba(142, 187, 188, 0.16) 0px 3px 6px, rgba(142, 187, 188, 0.23) 0px 3px 6px;
+  box-sizing: border-box;
+}
+
+.project1 p, .project2 p {
+  padding: 1em;
+}
+
+.project1 a, .project2 a {
+  color: #456990;
+  text-decoration: none;
+}
+
+.project1 a:hover, .project2 a:hover {
+  text-decoration: underline;
+}
+
+.h2projects {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+iframe {
+  display: block;
+  border-style: none;
+  margin: 1em auto;
+  box-sizing: border-box;
+}
+
+.projMedia {
+  max-height: 9.5rem;
+  max-width: 100%;
+  box-sizing: border-box;
+  display: block;
+  border-style: none;
+  margin: 1em auto;
+}
+
+.projMedia img, .projMedia iframe {
+  max-height: 9.5rem;
+  max-width: fit-content;
+  box-sizing: border-box;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (orientation:portrait) {
+  .container {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .logo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  nav li {
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+
+  #headshot {
+    margin-bottom: 10px;
+  }
+
+  #presentation {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #skills {
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
+
+  #skillsColumn1, #skillsColumn2, #skillsColumn3 {
+    width: 100%;
+    margin: 10px auto 10px auto;
+  }
+
+  .CVcontainer {
+    width: auto;
+  }
+
+  #contacts {
+    width: auto;
+  }
+
+  .projContainer {
+    width: 90%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .project1, .project2 {
+    width: 100%;
+    margin: 25px auto;
+  }
+
+  iframe {
+    width: 80%;
+  }
+
+}
